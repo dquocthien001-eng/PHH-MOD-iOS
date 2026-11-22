@@ -1,0 +1,21 @@
+
+name: PHHMOD
+options:
+  bundleIdPrefix: com.phhmod
+targets:
+  PHHMOD:
+    type: application
+    platform: iOS
+    deploymentTarget: "15.0"
+    sources:
+      - path: .
+        excludes:
+          - README.txt
+          - .github
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.phhmod.edition
+        INFOPLIST_FILE: Info.plist
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1"
+        CODE_SIGNING_ALLOWED: "NO"
